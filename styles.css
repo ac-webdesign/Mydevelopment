@@ -3,10 +3,12 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 body{
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-color: #fffbf5;
 }
 .coming{
     display: flex;
@@ -18,4 +20,15 @@ body{
 }
 .coming img{
     width: 380px;
+}
+
+h1{font-size: 48px;
+    color: #B69D79;
+
+}
+h2{
+    font-size: 36px;
+    margin-bottom: 2rem;
+    color: #15697F;
+
 }
