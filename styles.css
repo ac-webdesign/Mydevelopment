@@ -31,7 +31,11 @@ h2{font-size: 48px;}
 h3{font-size: 36px;}
 
 /* NAVIGATION */
-
+.logo {
+    width: 70px;
+    height: auto;
+    transition: width 0.5s ease-in-out;
+}
 header {
     /* background: linear-gradient(135deg, #F4EDE4 0%, #EAD7C2 40%, #D4B996 100%); */
     background-color: #F3F3F3;
@@ -43,7 +47,7 @@ header {
     border-bottom: 3px solid var(--primary-color);
     /* color: var(--secondary-color); */
     backdrop-filter: blur(8px);
-    transition: all 0.4s ease;
+    transition: all 0.5s ease;
     overflow: hidden;
     width: 100%;
     z-index: 1000;
@@ -71,8 +75,13 @@ header {
   
   header:hover {
     /* background: linear-gradient(135deg, #1e2a47 0%, #0c1424 60%, #19263d 100%); */
-    background: linear-gradient(135deg, var(--primary-color) 0%, #0c1424 60%, var(--primary-color) 100%);
+    /* background: linear-gradient(135deg, var(--primary-color) 0%, #0c1424 60%, var(--primary-color) 100%); */
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.9), inset 0 -2px 2px rgba(255, 255, 255, 0.2);
+    padding: 2rem 0;
+}
+header:hover .logo{
+    width: 100px;
+    transition: width 0.5s ease-in-out;
 }
 nav {
     max-width: 1200px;
@@ -84,10 +93,7 @@ nav {
     position: relative;
 }
 
-.logo {
-    width: 70px;
-    height: auto;
-}
+
 
 
 nav ul {
