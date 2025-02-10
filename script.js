@@ -33,3 +33,41 @@ thumbs.forEach((thumb, index) => {
 // }, 10000);
 
 updateBackground();
+
+
+// BURGER MENU 
+
+document.addEventListener('DOMContentLoaded', () => {
+    const burgerMenu = document.querySelector('.burger-menu');
+    const nav = document.querySelector('nav'); 
+    const navItems = document.querySelectorAll('.nav-item');
+    const navFooter = document.querySelector('.nav-footer');
+    const header = document.querySelector("header");
+
+
+    burgerMenu.addEventListener('click', () => {
+        nav.classList.toggle('active'); 
+        burgerMenu.classList.toggle('open'); 
+        header.classList.toggle("active"); // Expands the header
+        burgerMenu.textContent = burgerMenu.classList.contains('open') ? '✖' : '☰'; // Unicode Fix
+
+        if (navFooter) {
+            navFooter.classList.toggle('active');
+        }
+
+        document.body.style.overflow = burgerMenu.classList.contains('open') ? 'hidden' : 'auto';
+    });
+
+    // Close the menu when clicking anywhere outside the nav
+    document.addEventListener('click', (e) => {
+    if (!nav.contains(e.target) && !burgerMenu.contains(e.target)) { 
+        nav.classList.remove('active');
+        header.classList.remove("active"); // Shrinks the header back
+        burgerMenu.classList.remove('open');
+        burgerMenu.textContent = '☰'; // Reset icon
+        document.body.style.overflow = 'auto';
+    }
+    });
+
+})
+

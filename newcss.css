@@ -1,0 +1,157 @@
+/* LOGO */
+.logo {
+    width: 70px;
+    height: auto;
+    transition: width 0.5s ease-out;
+}
+
+header {
+    background: linear-gradient(135deg, #d6d4cf 0%, #F3F3F3 50%, #E0E0E0 100%);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.7), inset 0 -1px 1px rgba(255, 255, 255, 0.1);
+    border-bottom: 3px solid var(--primary-color);
+    backdrop-filter: blur(8px);
+    transition: all 0.5s ease;
+    width: 100%;
+    z-index: 1000;
+    font-family: 'Jura';
+    padding: 1rem 0;
+}
+
+/* Header Hover Effect */
+header:hover {
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.9), inset 0 -2px 2px rgba(255, 255, 255, 0.2);
+}
+
+header:hover .logo {
+    width: 110px;
+    transition: width 0.5s ease-in;
+}
+
+/* Navigation */
+nav {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+/* Navigation Links */
+nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+nav ul li {
+    margin-left: 2rem;
+}
+
+nav ul li a {
+    color: var(--primary-color);
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 0.5rem 1rem;
+    transition: all 0.3s ease;
+    border-radius: 4px;
+    position: relative;
+}
+
+/* Navigation Hover Effect */
+nav ul li a::before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 10px;
+    background-color: transparent;
+    transition: width 0.5s ease;
+}
+
+nav ul li a:hover::before {
+    background-color: var(--secondary-color);
+    width: calc(100% - 20px);
+}
+
+/* Burger Menu (Mobile) */
+.burger-menu {
+    display: none;
+    font-size: 32px;
+    cursor: pointer;
+    color: #3A9B88;
+    z-index: 9999;
+}
+
+.close-menu {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+    align-self: flex-end;
+    color: white;
+    padding: 1rem;
+}
+
+/* Mobile Navigation */
+@media (max-width: 768px) {
+    header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        border-bottom: 0;
+    }
+
+    .logo {
+        width: 90px;
+    }
+
+    header:hover .logo {
+        width: 110px;
+    }
+
+    /* Mobile Navigation */
+    nav {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 300px;
+        height: 100vh;
+        background-color: #032c2c;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+        padding: 2rem;
+        box-shadow: -2px 0 5px rgba(0, 0, 0, 0.2);
+        transition: right 0.3s ease-in-out;
+        z-index: 9998;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        gap: 1rem;
+    }
+
+    .burger-menu {
+        display: block;
+    }
+
+    .close-menu {
+        display: block;
+    }
+
+    nav.active {
+        right: 0;
+    }
+}
