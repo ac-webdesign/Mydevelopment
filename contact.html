@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyDevelopment Constructions</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="contact.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Euphoria+Script&family=Ibarra+Real+Nova:ital,wght@0,400..700;1,400..700&family=Jura:wght@300..700&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="#skills">PROJECTS</a></li>
+                <li>            <a href="../index.html" class="logo-link"><img class="logo" src="/images/LOGO-FOR-WEB-200-PIXELS.png" alt="Alexander Logo"></a>
+                </li>
+                <li><a href="#projects">FOR&nbsp;SALE</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="map">
+        <iframe src="https://maps.google.com/maps?q=Glifada&t=&z=13&ie=UTF8&iwloc=&output=embed"></iframe>
+    </div>
+    <section class="contact-section">
+        
+        <div class="contact-container box one">
+            <div class="contact-form">
+                <h2>Do you have any questions?</h2>
+                <p>Send us a message!</p>
+                <form action="#" method="POST">
+                    <div class="input-group">
+                        <input type="text" name="name" required placeholder="Name">
+                    </div>
+                    <div class="input-group">
+                        <input type="email" name="email" required placeholder="Email">
+                    </div>
+                    <div class="input-group">
+                        <textarea name="message" rows="5" required placeholder="Your Message"></textarea>
+                    </div>
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
+                       
+        </div>
+        <div class="contact-det box 2">
+            <div class="contact-det-all">
+                <div class="contact-det-left">
+                    <img src="images/phone.svg" alt="">
+                </div>
+                <div class="contact-det-right">
+                    <h2>Call us!</h2>
+                    <p>Feel free to contact us anytime.</p>
+                    <div class="contact-frame">
+                        +306948145786
+                    </div>
+                </div>
+            </div>
+            <div class="contact-det-all">
+                <div class="contact-det-left">
+                    <img src="images/location.svg" alt="">
+                </div>
+                <div class="contact-det-right">
+                    <h2>Visit us!</h2>
+                    <p>Meet us in person.</p>
+                    <div class="contact-frame">
+                        Attica Greece, <br>
+                        Aretis 94, Glifada
+                    </div>
+                </div>
+            </div>
+        </div> 
+    </section>
+    
+    <!-- <div class="line"></div> -->
+
+
+    <footer>
+        <div class="footer-container">
+            <img src="images/LOGO-FOR-WEB-200-PIXELS.png" alt="MyDevelopment Logo">
+            <div class="company-details">
+                <p>MyDevelopment, Real Estate Construction Company</p>
+                <hr>
+                <p>Aretis 94, Glifada</p>
+                <p>Athens - Greece</p>
+                <p>E-mail: info@mydevelopment.gr</p>
+                <p>Phone: +306948145786</p>
+            </div>
+            <div class="footer-nav">
+                <h4>QUICK LINKS</h4>
+                <ul>
+                    <a href="index.html">Home</a>
+                    <a href="services.html">Services</a>
+                    <a href="projects.html">Projects</a>
+                    <a href="contact.html">Contact</a>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-copy">
+            <h6>Copyright © 2025 All rights reserved</h6>
+            <h6>Designed & Developed by <a href="http://www.site-mou.gr">www.site-mou.gr</a></h6>
+        </div>
+    </footer>
+    <script>
+        window.onload = function() {
+          // Add the 'animate' class after the page loads
+          const boxes = document.querySelectorAll('.box');
+          
+          // Add staggered animation by adding classes with delay
+          setTimeout(() => {
+            boxes[0].style.opacity = 1;
+            boxes[0].style.transform = 'translateX(0)';
+          }, 200);  // Delay for the first box
+          
+          setTimeout(() => {
+            boxes[1].style.opacity = 1;
+            boxes[1].style.transform = 'translateX(0)';
+          }, 400);  // Delay for the second box
+        }
+      </script>
+      
+    <script src="script.js"></script>
+</body>
+</html>

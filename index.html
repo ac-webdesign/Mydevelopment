@@ -3,14 +3,156 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Development</title>
+    <title>MyDevelopment Constructions</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Euphoria+Script&family=Ibarra+Real+Nova:ital,wght@0,400..700;1,400..700&family=Jura:wght@300..700&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
 </head>
 <body>
-    <section class="coming">
-        <h1>Under Construction</h1>
-        <h2>Coming Soon</h2>
-        <img src="images/LOGO-FOR-WEB-5000-PIXELS.png" alt="MyDevelopment Logo">
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="#skills">PROJECTS</a></li>
+                <li>            <a href="../index.html" class="logo-link"><img class="logo" src="/images/LOGO-FOR-WEB-200-PIXELS.png" alt="Alexander Logo"></a>
+                </li>
+                <li><a href="#projects">FOR&nbsp;SALE</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="hero" id="hero">
+        <div class="overlay">
+            <img src="images/LOGO-NEGATIVE-FOR-WEB-200-PIXELS.png" alt="">
+            <h3>Real Estate Construction Company</h3>
+        </div>
+        <div class="thumbnails">
+            <img onclick="setImage(0)" id="thumb0">
+            <img onclick="setImage(1)" id="thumb1">
+            <img onclick="setImage(2)" id="thumb2">
+            <img onclick="setImage(3)" id="thumb3">
+            <img onclick="setImage(4)" id="thumb4">
+        </div>
     </section>
+    <section class="our-work">
+        <div class="title-container">
+            <h2>Projects</h2>
+            <h4>View All+</h4>
+        </div>
+        <div class="projects">
+            <div>
+                <div class="project">
+                    <img src="images/project1.png" alt="Modern Skyscraper">
+                    <div class="project-info">
+                        <div class="state">Sold</div>
+                        <h3>Modern Skyscraper</h3>
+                        <p>A high-rise commercial tower designed for sustainability and efficiency.</p>
+                    </div>
+                </div>
+                <div class="project-details">
+                    <p><strong>Location:</strong> Downtown Business District</p>
+                    <p><strong>Completion Year:</strong> 2023</p>
+                </div>
+            </div>
+            <div>
+                <div class="project">
+                    <img src="images/project2.png" alt="Luxury Villas">
+                    <div class="project-info">
+                        <div class="state sale">For Sale</div>
+                        <h3>1st floor
+                            Maisonette</h3>
+                        <p>Vasileiou Voulgaroktonou 3, Voula</p>
+                    </div>
+                </div>
+                <div class="project-details">
+                    <p><strong>Location:</strong> Voula, Attica</p>
+                    <p><strong>Completion Year:</strong> Under Construction</p>
+                    <h5>115 sm (1,238 ft²)</h5>
+                </div>
+            </div>
+            <div>
+                <div class="project">
+                    <img src="images/project3.png" alt="Industrial Complex">
+                    <div class="project-info">
+                        <div class="state sale">For Sale</div>
+                        <h3>Ground floor
+                            Maisonette</h3>
+                        <p>Vasileiou Voulgaroktonou 3, Voula</p>
+                    </div>
+                </div>
+                <div class="project-details">
+                    <p><strong>Location:</strong> Voula, Attica</p>
+                    <p><strong>Completion Year:</strong> Under Construction</p>
+                    <h5>166 sm (1,787 ft²)</h5>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- <section class="contact-section">
+        <div class="contact-container">
+            <div class="contact-info">
+                    <img src="images/LOGO-FOR-WEB-200-PIXELS.png" alt="MyDevelopment Logo">
+                    <div class="company-details">
+                        <p>MyDevelopment, Real Estate Construction Company</p>
+                        <hr>
+                        <p><b>Address:</b> Aretis 94, Glifada GR</p>
+                        <p><b>E-mail:</b> info@mydevelopment.gr</p>
+                        <p><b>Phone:</b> +306948145786</p>
+                    </div>
+                <div class="map">
+                    <iframe src="https://maps.google.com/maps?q=Glifada&t=&z=13&ie=UTF8&iwloc=&output=embed"></iframe>
+                </div>
+            </div>
+            <div class="contact-form">
+                <h2>Contact Us</h2>
+                <form action="#" method="POST">
+                    <div class="input-group">
+                        <input type="text" name="name" required placeholder="Name">
+                    </div>
+                    <div class="input-group">
+                        <input type="email" name="email" required placeholder="Email">
+                    </div>
+                    <div class="input-group">
+                        <textarea name="message" rows="5" required placeholder="Your Message"></textarea>
+                    </div>
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>            
+        </div>
+    </section> -->
+    
+    <!-- <div class="line"></div> -->
+
+
+    <footer>
+        <div class="footer-container">
+            <img src="images/LOGO-FOR-WEB-200-PIXELS.png" alt="MyDevelopment Logo">
+            <div class="company-details">
+                <p>MyDevelopment, Real Estate Construction Company</p>
+                <hr>
+                <p>Aretis 94, Glifada</p>
+                <p>Athens - Greece</p>
+                <p>E-mail: info@mydevelopment.gr</p>
+                <p>Phone: +306948145786</p>
+            </div>
+            <div class="footer-nav">
+                <h4>QUICK LINKS</h4>
+                <ul>
+                    <a href="index.html">Home</a>
+                    <a href="services.html">Services</a>
+                    <a href="projects.html">Projects</a>
+                    <a href="contact.html">Contact</a>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-copy">
+            <h6>Copyright © 2025 All rights reserved</h6>
+            <h6>Designed & Developed by <a href="http://www.site-mou.gr">www.site-mou.gr</a></h6>
+        </div>
+    </footer>
+    <script src="script.js"></script>
 </body>
 </html>
