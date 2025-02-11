@@ -36,6 +36,7 @@ ul li {
     background-color: #397F91;
     cursor: pointer;
     transition: background-color ease 0.3s;
+    margin-bottom: 2rem;
 }
 .download-btn:hover{
     background-color: #397F91;
@@ -406,4 +407,14 @@ ul li {
 
 .property-intro img{
     width: 340px;
+}
+.slogan{
+    font-family:  'Arial Narrow', Arial, sans-serif;
+    font-size: 2rem;
+    font-weight: 200;
+
+
+}
+h4{
+    font-weight: 200;
 }
