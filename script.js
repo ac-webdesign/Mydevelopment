@@ -71,32 +71,3 @@ thumbs.forEach((thumb, index) => {
 updateBackground();
 
 
-
-
-document.addEventListener("DOMContentLoaded", function () {
-    const images = document.querySelectorAll(".gallery-item img");
-    const lightbox = document.createElement("div");
-    lightbox.classList.add("lightbox");
-    document.body.appendChild(lightbox);
-
-    images.forEach((img) => {
-        img.addEventListener("click", function () {
-            const fullImage = document.createElement("img");
-            fullImage.src = img.src;
-            lightbox.innerHTML = ""; // Clear previous image
-            lightbox.appendChild(fullImage);
-            lightbox.style.display = "flex";
-        });
-    });
-
-    // Close lightbox on click or ESC key
-    lightbox.addEventListener("click", function () {
-        lightbox.style.display = "none";
-    });
-
-    document.addEventListener("keydown", function (e) {
-        if (e.key === "Escape") {
-            lightbox.style.display = "none";
-        }
-    });
-});
