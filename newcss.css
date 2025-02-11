@@ -155,3 +155,9 @@ nav ul li a:hover::before {
         right: 0;
     }
 }
+
+/* GLIFADA */
+
+.property-intro .container img{
+    width: 380px;
+}
