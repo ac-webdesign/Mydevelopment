@@ -157,12 +157,73 @@ button[type="submit"]:hover {
 /* Responsive Design */
 @media (max-width: 768px) {
     .contact-container {
+        justify-content: center;
+        align-items: center;
+        max-width: 100%;
+        padding: 4rem 2rem;
+
+
         flex-direction: column;
     }
-
+    .map{
+        order: 1;
+    }
+    footer{
+        order: 2;
+    }
     .contact-info, .contact-form {
         width: 100%;
-        padding: 50px;
+        padding: 0;
+    }
+    .contact-section{
+        background: transparent;
+        /* padding: 80px 20px; */
+        font-family:  sans-serif;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        overflow: hidden;
+        gap: 0;
+        margin-bottom: 0;
+
+
+        display: flex;
+        flex-direction: column;
+        max-width: 340px;
+        padding: 0;
+        top: 0;
+    }
+    .contact-det{
+        height: 425px;
+        margin: 0;
+        border-radius: 0;
+        justify-content: center;
+        align-items: center;
+        background: #ffffff;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+        overflow: hidden;
+        border-radius: 1rem;
+        display: flex;
+        flex-direction: column; 
+    }
+    .contact-det-all{
+        flex-direction: column;
+    }
+    .contact-det-right{
+        align-items: center;
+    }
+    .contact-det-right h2{
+        text-align: center;
+    }
+    .contact-det-right p{
+        text-align: center;
+    }
+    .contact-det-left{
+        display: none;
+    }
+    .contact-frame{
+        text-align: center;
     }
 }
 
