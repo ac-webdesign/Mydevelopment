@@ -92,8 +92,8 @@ ul li {
 }
 .property-details img{
     width: 350px;
-    height: 350px;
-
+    height: 360px;
+    margin-top: 1rem;
 }
 
 .property-details h3 {
@@ -130,7 +130,7 @@ ul li {
     border-radius: 8px;
     width: 100%;
     display: flex;
-    align-items: start;
+    align-items: center;
     justify-content: center;
     gap: 3rem;
 }
@@ -419,3 +419,6 @@ ul li {
 h4{
     font-weight: 200;
 }
+
+/* 115  */
+
