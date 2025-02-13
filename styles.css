@@ -275,7 +275,12 @@ nav ul li a:hover::before {
     text-align: center;
     transition: background-image 0.5s ease-in-out;
 }
-
+.hero-text p{
+    max-width: 600px;
+    text-align: start;
+    color: rgba(223, 223, 223, 0.699);
+    padding-left: 0.1rem;
+}
 .button-container{
     margin-top: 2rem;
     display: flex;
@@ -289,9 +294,10 @@ nav ul li a:hover::before {
     display: flex;
     align-items: center;
     justify-content: center;
+    gap: 2rem;
 }
 .overlay h3 {
-    color: white;
+    color: rgb(255, 255, 255);
     font-size: 2.2rem;
     font-weight: bold;
     text-align: center;
@@ -326,6 +332,7 @@ nav ul li a:hover::before {
         gap: 2rem;
         height: 106vh;
         background-repeat: no-repeat;
+        
     }
     .thumbnails{
         width: 100%;
@@ -334,7 +341,14 @@ nav ul li a:hover::before {
         bottom: 20px;
     }
     .overlay h3{
-        font-size: 1.4rem;
+        font-size: 1rem;
+        margin-bottom: 1rem;
+    }
+    
+    .overlay p{
+        text-align: center;
+        padding: 0 2rem;
+        font-size: 0.8rem;
     }
 }
 /* PROJECTS */
