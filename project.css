@@ -91,7 +91,7 @@ ul li {
     gap: 3rem;
 }
 .property-details img{
-    width: 350px;
+    max-width: 380px;
     height: 360px;
     margin-top: 1rem;
 }
