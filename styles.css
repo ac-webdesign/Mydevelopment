@@ -324,15 +324,16 @@ nav ul li a:hover::before {
 }
 @media (max-width:768px) {
     .hero{
-        background-position: 60% ; 
-        background-size: auto;
+        background-position: bottom; 
+        background-size: cover;
+        background-repeat: no-repeat;
     }
     .overlay{
         flex-direction: column;
         gap: 2rem;
         height: 106vh;
-        background-repeat: no-repeat;
-        
+        background: rgba(0, 0, 0, 0.3);
+
     }
     .thumbnails{
         width: 100%;
@@ -340,6 +341,7 @@ nav ul li a:hover::before {
         padding: 0 1rem;
         bottom: 20px;
     }
+
     .overlay h3{
         font-size: 1rem;
         margin-bottom: 1rem;

@@ -43,9 +43,15 @@ const images = [
     'images/A2_swimming_pool.jpg',
     'images/A1_living_room.jpg'
 ];
+
+if (window.matchMedia("(max-width: 768px)").matches) {
+    images.unshift('images/first_mobile_image.jpg');
+}
+
 let currentIndex = 0;
 const hero = document.getElementById('hero');
 const thumbs = document.querySelectorAll('[id^=thumb]');
+
 
 function updateBackground() {
     hero.style.backgroundImage = `url(${images[currentIndex]})`;
