@@ -330,6 +330,7 @@ nav ul li a:hover::before {
         background-repeat: no-repeat;
     }
     .overlay{
+        position: relative;
         flex-direction: column;
         justify-content: center;
         gap: 1rem;
