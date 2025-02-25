@@ -330,10 +330,10 @@ nav ul li a:hover::before {
     }
     .overlay{
         flex-direction: column;
-        gap: 2rem;
-        height: 106vh;
+        justify-content: center;
+        gap: 1rem;
+        height: 100vh;
         background: rgba(0, 0, 0, 0.3);
-
     }
     .thumbnails{
         width: 100%;
@@ -349,7 +349,7 @@ nav ul li a:hover::before {
     
     .overlay p{
         text-align: center;
-        padding: 0 2rem;
+        padding: 0 2rem 1rem;
         font-size: 0.8rem;
     }
 }

@@ -45,7 +45,14 @@ const images = [
 ];
 
 if (window.matchMedia("(max-width: 768px)").matches) {
-    images.unshift('images/first_mobile_image.jpg');
+    const mobileImages = [
+        'images/first_mobile_image.jpg',
+        'images/mobile_bathroom.jpg',
+        'images/mobile_building.jpg',
+        'images/mobile_bathroom1.jpg',
+        'images/mobile_bathroom2.jpg'
+    ];
+    images.unshift(...mobileImages); // Add mobile images at the beginning
 }
 
 let currentIndex = 0;
@@ -66,7 +73,9 @@ function setImage(index) {
 }
 
 thumbs.forEach((thumb, index) => {
-    thumb.src = images[index];
+    if (index < images.length) {
+        thumb.src = images[index]; 
+    }
 });
 
 // setInterval(() => {
