@@ -162,6 +162,7 @@ nav ul li a:hover::before {
         justify-content: space-around;
          align-items: center;
         width: 100%;
+        z-index: 9999;
     }
     header {
         border-bottom: 0px solid var(--primary-color);
