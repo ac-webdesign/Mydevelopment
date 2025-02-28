@@ -38,7 +38,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 const images = [
     'images/3.jpg',
-    'images/building.png',
+    'images/pisina.png',
     'images/A2_living_room.jpg',
     'images/A2_swimming_pool.jpg',
     'images/A1_living_room.jpg'
