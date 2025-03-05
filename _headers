@@ -3,6 +3,11 @@
 
 /*.css
   Cache-Control: public, max-age=604800
+  Content-Encoding: gzip
 
 /*.js
   Cache-Control: public, max-age=604800
+  Content-Encoding: gzip
+
+/*.html
+  Content-Encoding: gzip
