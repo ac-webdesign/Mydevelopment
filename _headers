@@ -1,13 +1,10 @@
   /*.html
-  Content-Encoding: gzip
   Content-Type: text/html; charset=UTF-8
 
 /*.css
-  Content-Encoding: gzip
   Content-Type: text/css; charset=UTF-8
 
 /*.js
-  Content-Encoding: gzip
   Content-Type: application/javascript; charset=UTF-8
 
 /images/*
