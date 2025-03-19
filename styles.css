@@ -279,7 +279,8 @@ nav ul li a:hover::before {
 .hero-text p{
     max-width: 600px;
     text-align: start;
-    color: rgba(223, 223, 223, 0.699);
+    font-weight: 400;
+    color: rgba(223, 223, 223, 0.9);
     padding-left: 0.1rem;
 }
 .button-container{
@@ -330,7 +331,8 @@ nav ul li a:hover::before {
         background-repeat: no-repeat;
     }
     .overlay{
-        position: relative;
+        /* position: relative; */
+        top: 2rem;
         flex-direction: column;
         justify-content: center;
         gap: 1rem;
