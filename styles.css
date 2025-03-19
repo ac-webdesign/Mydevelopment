@@ -274,12 +274,11 @@ nav ul li a:hover::before {
     justify-content: center;
     /* padding-top: 3rem; */
     text-align: center;
-    transition: background-image 0.5s ease-in-out;
 }
 .hero-text p{
     max-width: 600px;
     text-align: start;
-    font-weight: 400;
+    font-weight: 600;
     color: rgba(223, 223, 223, 0.9);
     padding-left: 0.1rem;
 }
@@ -332,13 +331,13 @@ nav ul li a:hover::before {
     }
     .overlay{
         /* position: relative; */
-        top: 2rem;
+        top: 0;
         flex-direction: column;
         justify-content: center;
         gap: 1rem;
         height: 100%;
-        background-color: rgba(0, 0, 0, 0.3);
-        padding-bottom: 6rem;
+        background-color: rgba(0, 0, 0, 0.5);
+        /* padding-bottom: 6rem; */
     }
     .thumbnails{
         width: 100%;
@@ -348,8 +347,8 @@ nav ul li a:hover::before {
     }
 
     .overlay h3{
-        font-size: 1rem;
-        margin-bottom: 1rem;
+        font-size: 1.2rem;
+        margin-bottom: 0.8rem;
     }
     
     .overlay p{
