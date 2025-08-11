@@ -15,6 +15,7 @@
             display: flex;
             flex-direction: column;
             align-items: center;
+            justify-content: center;
             padding: 50px 0;
             gap: 40px;
         }
@@ -47,6 +48,13 @@
             height: 100%;
             object-fit: cover;
         }
+        .project-box-link {
+            text-decoration: none;  /* remove underline */
+            color: inherit;        
+            display: flex;
+            justify-content: center;
+        }
+
 
         /* Project Details */
         .project-details {
@@ -130,37 +138,44 @@
 
     <section class="projects-wrapper">
         <!-- Project 1 -->
-        <div class="project-box">
-            <img src="images/A1glifada1.webp" alt="Voula Maisonette">
-            <div class="project-details">
-                <h2>Glyfada Apartment Building</h2>
-                <p>Welcome to our latest apartment project, a stunning 
-                    contemporary residence designed for luxury, comfort, 
-                    and functionality.</p>
-                <a href="project-glifada.html" class="view-btn">View Project</a>
-            </div>
-        </div>
-        <div class="project-box">
-            <img src="images/A1 Swimming pool.webp" alt="Seaside Villa">
-            <div class="project-details">
-                <h2>Ground floor - 1st floor
-                    Maisonette 166 sq.m.</h2>
-                <p>A charming duplex apartment (maisonette) located in the southern suburbs Athens at Athenian Riviera, offering exclusive use of a private garden and swimming pool, designed for comfort and elegance.</p>
-                <a href="project-voula166.html" class="view-btn">View Project</a>
-            </div>
-        </div>
-        <!-- Project 2 -->
-        <div class="project-box ">
-            <img src="images/A2_swimming_pool.webp" alt="Luxury Apartments">
-            <div class="project-details">
-                <h2>Ground floor - 1st floor
-                    Maisonette 115 sq.m.</h2>
-                <p>A charming duplex apartment (maisonette) located in the southern suburbs Athens at Athenian Riviera, offering exclusive use of a private garden and swimming pool, designed for comfort and elegance.</p>
-                <a href="project-voula115.html" class="view-btn">View Project</a>
-            </div>
-        </div>
 
-        <!-- Project 3 -->
+        <a href="project-glifada.html" class="project-box-link">
+            <div class="project-box">
+                <img src="images/A1glifada1.webp" alt="Voula Maisonette">
+                <div class="project-details">
+                    <h2>Glyfada Apartment Building</h2>
+                    <p>Welcome to our latest apartment project, a stunning
+                        contemporary residence designed for luxury, comfort,
+                        and functionality.</p>
+                    <span class="view-btn">View Project</span>
+                </div>
+            </div>
+        </a>
+
+        <a href="project-voula166.html" class="project-box-link">
+            <div class="project-box">
+                <img src="images/A1 Swimming pool.webp" alt="Seaside Villa">
+                <div class="project-details">
+                    <h2>Ground floor - 1st floor
+                        Maisonette 166 sq.m.</h2>
+                    <p>A charming duplex apartment (maisonette) located in the southern suburbs Athens at Athenian Riviera, offering exclusive use of a private garden and swimming pool, designed for comfort and elegance.</p>
+                    <span class="view-btn">View Project</span>
+                </div>
+            </div>
+        </a>
+                            
+        <a href="project-voula115.html" class="project-box-link">
+            <div class="project-box">
+                <img src="images/A2_swimming_pool.webp" alt="Luxury Apartments">
+                <div class="project-details">
+                    <h2>Ground floor - 1st floor
+                        Maisonette 115 sq.m.</h2>
+                    <p>A charming duplex apartment (maisonette) located in the southern suburbs Athens at Athenian Riviera, offering exclusive use of a private garden and swimming pool, designed for comfort and elegance.</p>
+                    <span class="view-btn">View Project</span>
+                </div>
+            </div>
+        </a>
+
         
     </section>
     <footer>
