@@ -38,6 +38,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 const images = [
     'images/3.jpg',
+    'images/newbuilding2025.jpg',
     'images/pisina.png',
     'images/A2_living_room.jpg',
     'images/A2_swimming_pool.jpg',
@@ -46,6 +47,7 @@ const images = [
 
 if (window.matchMedia("(max-width: 768px)").matches) {
     const mobileImages = [
+        'images/newbuilding2025.jpg',
         'images/first_mobile_image.jpg',
         'images/mobile_bathroom.jpg',
         'images/mobile_building.jpg',
